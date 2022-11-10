@@ -26,7 +26,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:navigationIcon="@drawable/ic_arrow_back_24"
-        app:title="Поиск по названию города"
+        app:title="Search by city name"
         app:titleTextColor="?attr/colorOnPrimary"
         app:titleTextAppearance="@style/ToolbarCustom"/>
 

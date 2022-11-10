@@ -18,11 +18,11 @@
     <string name="choose_a_city">Choose a city</string>
     <string name="or">or</string>
     <string name="find_your_location">Find by your location</string>
-    <string name="search_hint">Введите название города</string>
+    <string name="search_hint">Enter the name of the city</string>
     <string name="tab_today">Today</string>
     <string name="tab_week">Week</string>
-    <string name="error_request_permissions">Похоже вы не дали разрешение приложению на получение геопозиции</string>
-    <string name="error_internet_connection">Упс! Что-то пошло не так… Возможно у вас отсутствует интернет соединение</string>
+    <string name="error_request_permissions">Looks like you didn\'t give permission to the app to get your location.</string>
+    <string name="error_internet_connection">Oops! Something went wrong… You may not have an internet connection</string>
     <string name="try_again">Try again</string>
     <string name="day_week">%1$s %2$s</string>
     <string name="today">Today</string>
