@@ -1,6 +1,11 @@
 # PureWeather
 Android weather client ☀️🌦️🌥️
 
+### Current & Daily Weather by location or searching the city
+
+![photo](https://user-images.githubusercontent.com/74020408/201151816-586a488f-acbf-489c-b89a-04404e54adcb.png)
+
+
 ## Tech stack
 - Kotlin based, Coroutines for asynchronous
 - Dagger for dependency injection
