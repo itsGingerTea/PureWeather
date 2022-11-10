@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">PureWeather</string>
+    <string name="city_test">City</string>
+    <string name="temp">%1$.1f°C</string>
+    <string name="temps">%1$.1f°C\n%2$.1f°C</string>
+    <string name="rh">Humidity</string>
+    <string name="wind_speed">Wind speed</string>
+    <string name="wind_dir">Wind direction</string>
+    <string name="cloud_cov">Сloud coverage</string>
+    <string name="pressure">Pressure</string>
+    <string name="uv">UV Index</string>
+    <string name="uv_value">">%1$.2f</string>
+    <string name="pres_value">%1$.1f mBar</string>
+    <string name="rh_value">%1$d%%</string>
+    <string name="clouds_value">%1$d%%</string>
+    <string name="wind_spd_value">%1$.1f m/h</string>
+    <string name="title">Pure Weather</string>
+    <string name="choose_a_city">Choose a city</string>
+    <string name="or">or</string>
+    <string name="find_your_location">Find by your location</string>
+    <string name="search_hint">Введите название города</string>
+    <string name="tab_today">Today</string>
+    <string name="tab_week">Week</string>
+    <string name="error_request_permissions">Похоже вы не дали разрешение приложению на получение геопозиции</string>
+    <string name="error_internet_connection">Упс! Что-то пошло не так… Возможно у вас отсутствует интернет соединение</string>
+    <string name="try_again">Try again</string>
+    <string name="day_week">%1$s %2$s</string>
+    <string name="today">Today</string>
+    <string name="load_image">https://www.weatherbit.io/static/img/icons/%1$s.png</string>
+</resources>

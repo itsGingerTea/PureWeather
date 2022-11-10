@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginVertical="16dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_week_day"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="?attr/colorOnPrimary"
+        tools:text="Day n"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:textSize="22sp"
+        android:maxLines="2"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:id="@+id/iv_week_day"
+        app:layout_constraintStart_toEndOf="@id/tv_week_day"
+        app:layout_constraintTop_toTopOf="@id/tv_week_day"
+        app:layout_constraintBottom_toBottomOf="@id/tv_week_day"
+        app:layout_constraintEnd_toStartOf="@id/tv_week_temps"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        tools:src="@mipmap/ic_launcher"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_week_day_desc"
+        app:layout_constraintTop_toBottomOf="@id/iv_week_day"
+        app:layout_constraintStart_toStartOf="@id/iv_week_day"
+        app:layout_constraintEnd_toEndOf="@id/iv_week_day"
+        android:textColor="?attr/colorOnPrimary"
+        tools:text="Sunny"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:textSize="14sp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_week_temps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_week_day"
+        android:textColor="?attr/colorOnPrimary"
+        tools:text="11°C 18°C"
+        android:fontFamily="@font/roboto_condensed_regular"
+        android:textSize="22sp"
+        android:lines="2"
+        android:minLines="2"
+        android:singleLine="false"
+        android:layout_marginEnd="24dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

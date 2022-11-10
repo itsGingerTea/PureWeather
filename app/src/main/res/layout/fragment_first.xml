@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/colorOnPrimary">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="48sp"
+        android:id="@+id/tv_title"
+        android:textColor="?attr/colorPrimary"
+        android:fontFamily="@font/roboto_condensed_light"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="96dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_choose_a_city"
+        android:textColor="?attr/colorOnPrimary"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:textAlignment="center"
+        android:text="@string/choose_a_city"
+        android:textSize="26sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintEnd_toEndOf="@id/tv_title"
+        android:layout_marginTop="24dp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        android:background="@drawable/background_text_white"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_or"
+        android:text="@string/or"
+        android:textColor="?attr/colorPrimary"
+        android:fontFamily="@font/roboto_condensed_light"
+        app:layout_constraintTop_toBottomOf="@id/tv_choose_a_city"
+        app:layout_constraintStart_toStartOf="@id/tv_choose_a_city"
+        app:layout_constraintEnd_toEndOf="@id/tv_choose_a_city"
+        android:textSize="28sp"
+        android:layout_margin="8dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_find_your_location"
+        android:textColor="?attr/colorOnPrimary"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:textAlignment="center"
+        android:text="@string/find_your_location"
+        android:textSize="26sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_or"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintEnd_toEndOf="@id/tv_title"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        android:background="@drawable/background_text_white"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

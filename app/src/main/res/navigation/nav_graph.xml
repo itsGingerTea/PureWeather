@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.pureweather.ui.FirstFragment"
+        android:label="FirstFragment" >
+        <action
+            android:id="@+id/action_firstFragment_to_mainFragment2"
+            app:destination="@id/mainFragment" >
+            <argument
+                android:name="flag"
+                app:argType="boolean"/>
+        </action>
+        <action
+            android:id="@+id/action_firstFragment_to_searchFragment"
+            app:destination="@id/searchFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.pureweather.ui.MainFragment"
+        android:label="MainFragment" >
+        <argument
+            android:name="flag"
+            app:argType="boolean"/>
+        <action
+            android:id="@+id/action_mainFragment_to_dayFragment"
+            app:destination="@id/dayFragment" >
+            <argument
+                android:name="flag"
+                app:argType="boolean"/>
+        </action>
+        <action
+            android:id="@+id/action_mainFragment_to_weekFragment"
+            app:destination="@id/weekFragment" >
+            <argument
+                android:name="flag"
+                app:argType="boolean"/>
+        </action>
+        <action
+            android:id="@+id/action_mainFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dayFragment"
+        android:name="com.example.pureweather.ui.day.DayFragment"
+        android:label="DayFragment" />
+    <fragment
+        android:id="@+id/weekFragment"
+        android:name="com.example.pureweather.ui.week.WeekFragment"
+        android:label="WeekFragment" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.pureweather.ui.search.SearchFragment"
+        android:label="SearchFragment" >
+        <action
+            android:id="@+id/action_searchFragment_to_mainFragment"
+            app:destination="@id/mainFragment" >
+            <argument
+                android:name="flag"
+                app:argType="boolean"/>
+        </action>
+    </fragment>
+</navigation>
